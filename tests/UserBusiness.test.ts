@@ -208,7 +208,7 @@ describe("Login", () => {
         try {
          const pessoa: LoginInputDTO = {
              email: "mif@gmail.com",
-             password: "123456"
+             password: "12345"
          }
            await userBusiness.getUserByEmail(
              pessoa 
