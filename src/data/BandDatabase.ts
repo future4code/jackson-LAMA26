@@ -1,7 +1,7 @@
 import { Band } from "../model/Band";
 import { BaseDatabase } from "./BaseDatabase";
 
-class BandDatabase extends BaseDatabase{
+export class BandDatabase extends BaseDatabase{
 
     private tableName: string = "NOME_TABELA_BANDAS"
  
@@ -24,7 +24,7 @@ class BandDatabase extends BaseDatabase{
         }
         public async selectBand(
             id: string,
-            authorId: string
+            name: string
          ): Promise<Band> {
             try {
                const result = await this.getConnection()(this.tableName)
