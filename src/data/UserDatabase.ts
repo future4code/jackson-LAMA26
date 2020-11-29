@@ -37,3 +37,5 @@ export class UserDatabase extends BaseDatabase {
   }
 
 }
+
+export default new UserDatabase()

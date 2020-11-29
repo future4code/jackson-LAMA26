@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import BandBusiness from "../business/BandBusiness";
 import { Band, BandInput } from "../model/Band";
 
 class BandController {
@@ -35,7 +36,7 @@ class BandController {
        
     }}
  
-    public async getPostById(
+    public async getBandById(
        req: Request,
        res: Response
     ): Promise<void> {
