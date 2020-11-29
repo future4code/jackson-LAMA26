@@ -22,7 +22,7 @@ describe("Create Band", () => {
              responsible: "Gustavo Bertoni"
          }
 
-         const token: string = "hina"
+         const token: string = "hinaa"
 
        try {
           await bandBusiness.createBand(
